@@ -17,7 +17,6 @@ import com.mongodb.client.MongoClients;
 @EnableTransactionManagement 
 @EnableMongoRepositories(basePackages = "com.sopt.wokat")
 public class MongoDBConfig extends AbstractMongoClientConfiguration {
-
     @Value("${spring.data.mongodb.uri}")
     private String mongoUri;
 
@@ -42,5 +41,4 @@ public class MongoDBConfig extends AbstractMongoClientConfiguration {
         mongoTemplate.setSessionSynchronization(SessionSynchronization.ALWAYS);
         return mongoTemplate;
     }
-
 }

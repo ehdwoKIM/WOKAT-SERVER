@@ -13,13 +13,13 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 
 @Data
-@Document(collation = "base_entity")
-@Schema(description = "기본 컬럼")
+@Document(collection = "Base_Entity")
+@Schema(description = "공통 필드")
 public class BaseEntity {
     
     @Id
     @Field("_id")
-    @Schema(description = "유저 고유 ID")
+    @Schema(description = "유저 ID")
     private String id;
 
     @CreatedDate

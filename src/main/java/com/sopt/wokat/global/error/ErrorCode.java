@@ -24,6 +24,12 @@ public enum ErrorCode {
 	HTTP_HEADER_INVALID(400, "G006", "request header가 유효하지 않습니다."),
 	ENTITY_TYPE_INVALID(500, "G007", "올바르지 않은 entity type 입니다."),
     
+    //! User
+    ACCOUNT_MISMATCH(401, "M001", "계정 정보가 일치하지 않습니다."),
+
+    //! AUTH
+    AUTHENTICATION_NOT_FOUND(401, "A001", "Security Context에 인증 정보가 없습니다."),
+
     //! JWT
     JWT_INVALID(40, "J001", "유효하지 않은 토큰입니다."),
     JWT_EXPIRED(410, "J002", "만료된 토큰입니다."),
