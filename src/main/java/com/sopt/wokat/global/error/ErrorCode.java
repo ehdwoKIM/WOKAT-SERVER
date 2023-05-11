@@ -23,6 +23,7 @@ public enum ErrorCode {
 	HTTP_MESSAGE_NOT_READABLE(400, "G005", "request message body가 없거나, 값 타입이 올바르지 않습니다."),
 	HTTP_HEADER_INVALID(400, "G006", "request header가 유효하지 않습니다."),
 	ENTITY_TYPE_INVALID(500, "G007", "올바르지 않은 entity type 입니다."),
+    FILE_CANT_CONVERT(500, "G008", "변환할 수 없는 파일입니다."),
     
     //! User
     ACCOUNT_MISMATCH(401, "M001", "계정 정보가 일치하지 않습니다."),
